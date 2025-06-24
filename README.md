@@ -30,19 +30,14 @@ Weakly-Supervised Video Anomaly Detection (WS-VAD) primarily struggles to robust
     conda activate dsib_env
     ```
 
-3.  Install dependencies:
-    ```bash
-    # It's recommended to create a requirements.txt file
-    pip install torch numpy argparse
-    # Or run: pip install -r requirements.txt (if provided)
-    ```
+
 
 ## Dataset Preparation
 
 This project supports the **UCF-Crime** and **ShanghaiTech** datasets.
 
 1.  **Feature Extraction**:
-    You need to pre-extract I3D features from the videos. Place the extracted feature files (typically in `.npy` format) into the corresponding dataset directory.
+    You need to pre-extract VIT features from the videos. Place the extracted feature files (typically in `.npy` format) into the corresponding dataset directory.
 
 2.  **Directory Structure**:
     Please organize your dataset files according to the following structure, which the code expects for reading features and annotations:
