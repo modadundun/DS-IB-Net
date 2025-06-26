@@ -16,6 +16,26 @@ Weakly-Supervised Video Anomaly Detection (WS-VAD) primarily struggles to robust
 - **Adaptive Fusion**: Intelligently fuses features from the dual streams using an Adaptive Feature Arbitration (AFA) module for more precise anomaly scoring.
 - **State-of-the-Art Performance**: Achieves leading performance on the UCF-Crime and ShanghaiTech datasets.
 
+## original README（without paper）
+Our codebase mainly refers to AR-net. We greatly appreciate their excellent contribution with nicely organized code!
+## Results
+
+ProDisc-VAD demonstrates strong performance on standard WS-VAD benchmarks:
+
+| Dataset     | ProDisc-VAD (AUC %) |
+| :-----------  | :------------------ | 
+| ShanghaiTech   |98.13 |
+| UCF-Crime     | 87.65   |
+
+
+| Method        | Params (G) | Test Time (s) | Model Size (MB) |
+| :------------ | :--------- | :------------ | :-------------- |
+| MIST | 0.003 |0.25 | 48.5 |
+| RTFM | 0.02 |0.14 | 94.3 |
+| S3R | 0.05 |0.16 | 310.7 |
+| VadCLIP | 0.35 |0.27 | 619.1 |
+| **DS-IB** | **0.005** |**0.0009** | **17.7** |
+
 ## Installation
 
 1.  Clone this repository:
